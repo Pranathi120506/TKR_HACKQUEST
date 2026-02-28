@@ -1,0 +1,117 @@
+/* ═══════════════════════════════════════════════
+   GLOBAL STYLES — 1000-Day Maternal Care Suite
+═══════════════════════════════════════════════ */
+
+:root {
+  --rose: #F2A7B8;
+  --rose-deep: #E07A94;
+  --lavender: #C5B4E3;
+  --lavender-deep: #9B7ED9;
+  --sage: #A8D5B5;
+  --sage-deep: #5DAE7A;
+  --peach: #F7C59F;
+  --peach-deep: #E8963A;
+  --sky: #A8D4F5;
+  --sky-deep: #3A9BD5;
+  --cream: #FDF8F2;
+  --ink: #2D2320;
+  --ink-light: #5C4F4A;
+  --red-alert: #E85454;
+  --card-shadow: 0 8px 40px rgba(45, 35, 32, 0.08);
+  --card-shadow-hover: 0 16px 60px rgba(45, 35, 32, 0.14);
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+input {
+  font-family: var(--font-body);
+}
+
+/* ── Shared Auth Form Styles ── */
+.form-input {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: 12px;
+  border: 1.5px solid rgba(45, 35, 32, 0.15);
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--ink);
+  background: var(--cream);
+  transition: all 0.2s;
+  outline: none;
+}
+.form-input:focus {
+  border-color: var(--rose-deep);
+  background: white;
+  box-shadow: 0 0 0 3px rgba(224, 122, 148, 0.12);
+}
+.form-input.doctor-input:focus {
+  border-color: var(--sky-deep);
+  box-shadow: 0 0 0 3px rgba(58, 155, 213, 0.12);
+}
+.form-label {
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.form-group {
+  margin-bottom: 18px;
+}
+.form-input-wrap {
+  position: relative;
+}
+.form-input-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--ink-light);
+}
+
+/* ── Shared Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0); }
+  50%       { transform: translate(-30px, 20px); }
+}
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0); }
+  50%       { transform: translate(20px, -30px); }
+}
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%       { transform: translate(-20px, 15px) scale(1.1); }
+}
