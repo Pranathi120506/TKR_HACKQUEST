@@ -1,4 +1,4 @@
-# 🌸 1000-Day Maternal Care Suite — React
+# 🌸 BLOOM ~ 1000-Day Maternal Care Suite — React
 
 A role-based maternal healthcare application built with React + Vite.
 
